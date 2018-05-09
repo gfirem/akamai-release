@@ -1,0 +1,34 @@
+{
+  "name": "akamairelease",
+  "version": "0.0.1",
+  "description": "A library to generate the releases for the cli modules",
+  "repository": "https://github.com/akamai/akamai-release",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "pretest": "npm run lint",
+    "posttest": "rm -rf releases",
+    "test": "mocha test --timeout 0"
+  },
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "src"
+  ],
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "pkg": "^4.3.0-beta.5",
+    "safe-buffer": "^5.1.1",
+    "sywac": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-loopback": "^10.0.0",
+    "mocha": "^5.1.1"
+  }
+}
