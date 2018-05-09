@@ -8,12 +8,18 @@ const exec = require('child-process-promise').exec;
  *
  * @param {string} source
  * @param {string} target
+ * @param {int} nodeVersion
  * @returns {Promise<T>}
  */
-module.exports = (source, target) => {
-  source = source || false;
-  target = target || false;
-  return exec(`pkg ${source} -t node8-linux-x86,node8-linux-x64,node8-win-x86,node8-win-x64,node8-macos-x64 --output ${target}`)
+module.exports = (source, target, nodeVersion) => {
+  if (!source) {
+    throw new Error('The source parameter need to be valid');
+  }
+  if (!target) {
+    throw new Error('The target parameter need to be valid');
+  }
+  nodeVersion = nodeVersion || 8;
+  return exec(`pkg ${source} -t node${nodeVersion}-linux-x86,node${nodeVersion}-linux-x64,node${nodeVersion}-win-x86,node${nodeVersion}-win-x64,node${nodeVersion}-macos-x64 --output ${target}`)
     .then(function(result) {
       let stdout = result.stdout;
       let stderr = result.stderr;
