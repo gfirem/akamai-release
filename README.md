@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gfirem/akamai-release-node.svg?branch=master)](https://travis-ci.org/gfirem/akamai-release-node)
+
 # Akamai Node Release Library
 
 Write instructions on how to include in other libraries
