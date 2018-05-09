@@ -11,7 +11,7 @@
     "lint": "eslint --ignore-path .gitignore .",
     "pretest": "npm run lint",
     "posttest": "rm -rf releases",
-    "test": "mocha test --timeout 0"
+    "test": "snyk test && mocha test --timeout 0"
   },
   "main": "./index.js",
   "files": [
@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "child-process-promise": "^2.2.1",
-    "pkg": "^4.3.0-beta.5",
+    "pkg": "^4.3.1",
     "safe-buffer": "^5.1.1",
     "sywac": "^1.2.0"
   },
@@ -29,6 +29,7 @@
     "chai-as-promised": "^7.1.1",
     "eslint": "^4.19.1",
     "eslint-config-loopback": "^10.0.0",
-    "mocha": "^5.1.1"
+    "mocha": "^5.1.1",
+    "snyk": "^1.80.0"
   }
 }
