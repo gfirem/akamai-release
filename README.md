@@ -1,4 +1,4 @@
-# Akamai Release Library
+# Akamai Node Release Library
 
 Write instructions on how to include in other libraries
 
