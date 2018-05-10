@@ -1,7 +1,9 @@
 [![Build Status](https://travis-ci.org/gfirem/akamai-release-node.svg?branch=master)](https://travis-ci.org/gfirem/akamai-release-node) [![Known Vulnerabilities](https://snyk.io/test/github/gfirem/akamai-release-node/badge.svg)](https://snyk.io/test/github/gfirem/akamai-release-node)
 # Akamai Node Release Library
 
-Write instructions on how to include in other libraries
+To include this module in your code:
+
+`npm i akamai-node-release`
 
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/gfirem/akamai-release-node/tags). 
