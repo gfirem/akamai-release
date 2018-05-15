@@ -1,6 +1,6 @@
 {
   "name": "akamai-node-release",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A library to generate the releases for the node cli modules",
   "repository": "https://github.com/gfirem/akamai-release-node",
   "license": "MIT",
