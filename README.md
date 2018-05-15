@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/gfirem/akamai-release-node.svg?branch=master)](https://travis-ci.org/gfirem/akamai-release-node) [![Known Vulnerabilities](https://snyk.io/test/github/gfirem/akamai-release-node/badge.svg)](https://snyk.io/test/github/gfirem/akamai-release-node)
+[![Build Status](https://travis-ci.org/gfirem/akamai-release-node.svg?branch=master)](https://travis-ci.org/gfirem/akamai-release-node) [![Known Vulnerabilities](https://snyk.io/test/github/gfirem/akamai-release-node/badge.svg)](https://snyk.io/test/github/gfirem/akamai-release-node) [![Coverage Status](https://coveralls.io/repos/gfirem/akamai-release-node/badge.svg?branch=master)](https://coveralls.io/r/gfirem/akamai-release-node?branch=master)
 # Akamai Node Release Library
 
 To include this module in your code:

@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "pretest": "npm run lint",
-    "test": "snyk test && nyc --reporter=html --reporter=text mocha test --timeout 0"
+    "test": "snyk test && nyc --reporter=html --reporter=text mocha test --timeout 0",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "main": "./src/release.js",
   "files": [
@@ -25,8 +26,10 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
+    "coveralls": "^3.0.1",
     "eslint": "^4.19.1",
     "eslint-config-loopback": "^10.0.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.1.1",
     "nyc": "^11.7.3",
     "snyk": "^1.80.1"
