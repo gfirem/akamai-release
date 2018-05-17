@@ -55,4 +55,16 @@ describe('Release generation', function() {
     expect(fileExist).to.be.false;
     done();
   });
+  it('test exception for invalid source', function(done) {
+    expect(function() {
+      require('../src/release')(undefined, '')
+    }).to.throw('The source parameter need to be valid');
+    done();
+  });
+  it('test exception for invalid target', function(done) {
+    expect(function() {
+      require('../src/release')('bin/akamai-binary.js')
+    }).to.throw('The target parameter need to be valid');
+    done();
+  });
 });
